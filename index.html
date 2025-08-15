@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Password Validator</title>
+    </head>
+    
+    <style>
+        h1{
+            width: 50%;
+            text-align: justify;
+        }
+
+        input{
+            height: 42px;
+            width: 250px;
+            font-size: 16px;
+            outline: none;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+
+        p{
+            font-size: 18px;
+        }
+    </style>
+    
+    <body>
+        <center>
+            <h1>Type a password which should have 1 Uppercase letter, 1 lowercase letter, 1 special symbol(@ or _) and 1 number and password must have 8 characters</h1>
+
+            <input 
+            type="password"
+            oninput="passwordValidator(event.target.value)"
+            >
+
+            <p id="length"></p>
+            <p id="uppercase"></p>
+            <p id="lowercase"></p>
+            <p id="special"></p>
+            <p id="number"></p>
+        </center>
+
+        <script src="script.js"></script>
+    </body>
+</html>
